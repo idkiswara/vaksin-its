@@ -24,50 +24,30 @@ $(function(){
   ];
 
   new Morris.Bar({
-    element: 'morrisBar1',
-    data: morrisData,
-    xkey: 'y',
-    ykeys: ['a', 'b'],
-    labels: ['Series A', 'Series B'],
-    barColors: ['#560bd0', '#007bff'],
-    gridTextSize: 11,
-    hideHover: 'auto',
-    resize: true
-  });
-
-  new Morris.Bar({
-    element: 'morrisBar2',
+    element: 'morrisBar',
     data: morrisData2,
     xkey: 'y',
     ykeys: ['a', 'b', 'c'],
     labels: ['Series A', 'Series B', 'Series C'],
     barColors: ['#560bd0', '#007bff','#00cccc'],
+    gridLineColor: '#e5e9f2',
+    gridStrokeWidth: 1,
     gridTextSize: 11,
     hideHover: 'auto',
     resize: true
   });
 
-  new Morris.Bar({
-    element: 'morrisBar3',
-    data: morrisData,
-    xkey: 'y',
-    ykeys: ['a', 'b'],
-    labels: ['Series A', 'Series B'],
-    barColors: ['#560bd0', '#007bff'],
-    stacked: true,
-    gridTextSize: 11,
-    hideHover: 'auto',
-    resize: true
-  });
 
   new Morris.Bar({
-    element: 'morrisBar4',
+    element: 'morrisStacked',
     data: morrisData2,
     xkey: 'y',
     ykeys: ['a', 'b', 'c'],
     labels: ['Series A', 'Series B', 'Series C'],
     barColors: ['#560bd0', '#007bff','#00cccc'],
     stacked: true,
+    gridLineColor: '#e5e9f2',
+    gridStrokeWidth: 1,
     gridTextSize: 11,
     hideHover: 'auto',
     resize: true
@@ -75,29 +55,7 @@ $(function(){
 
 
   new Morris.Line({
-    element: 'morrisLine1',
-    data: [
-      { y: '2006', a: 20, b: 10 },
-      { y: '2007', a: 30,  b: 15 },
-      { y: '2008', a: 60,  b: 40 },
-      { y: '2009', a: 40,  b: 25 },
-      { y: '2010', a: 30,  b: 15 },
-      { y: '2011', a: 45,  b: 20 },
-      { y: '2012', a: 60, b: 40 }
-    ],
-    xkey: 'y',
-    ykeys: ['a', 'b'],
-    labels: ['Series A', 'Series B'],
-    lineColors: ['#560bd0', '#007bff'],
-    lineWidth: 1,
-    ymax: 'auto 100',
-    gridTextSize: 11,
-    hideHover: 'auto',
-    resize: true
-  });
-
-  new Morris.Line({
-    element: 'morrisLine2',
+    element: 'morrisLine',
     data: [
       { y: '2006', a: 20, b: 10, c: 40 },
       { y: '2007', a: 30, b: 15, c: 45 },
@@ -113,35 +71,16 @@ $(function(){
     lineColors: ['#560bd0', '#007bff','#00cccc'],
     lineWidth: 1,
     ymax: 'auto 100',
+    gridLineColor: '#e5e9f2',
+    gridStrokeWidth: 1,
     gridTextSize: 11,
     hideHover: 'auto',
     resize: true
   });
 
-  new Morris.Area({
-    element: 'morrisArea1',
-    data: [
-      { y: '2006', a: 50, b: 40 },
-      { y: '2007', a: 25,  b: 15 },
-      { y: '2008', a: 20,  b: 40 },
-      { y: '2009', a: 75,  b: 65 },
-      { y: '2010', a: 50,  b: 40 },
-      { y: '2011', a: 75,  b: 65 },
-      { y: '2012', a: 100, b: 90 }
-    ],
-    xkey: 'y',
-    ykeys: ['a', 'b'],
-    labels: ['Series A', 'Series B'],
-    lineColors: ['#560bd0', '#007bff'],
-    lineWidth: 1,
-    fillOpacity: 0.9,
-    gridTextSize: 11,
-    hideHover: 'auto',
-    resize: true
-  });
 
   new Morris.Area({
-    element: 'morrisArea2',
+    element: 'morrisArea',
     data: [
       { y: '2006', a: 20, b: 10, c: 40 },
       { y: '2007', a: 30, b: 15, c: 45 },
@@ -157,24 +96,16 @@ $(function(){
     lineColors: ['#560bd0', '#007bff','#00cccc'],
     lineWidth: 1,
     fillOpacity: 0.9,
+    gridLineColor: '#e5e9f2',
+    gridStrokeWidth: 1,
     gridTextSize: 11,
     hideHover: 'auto',
     resize: true
   });
 
-  new Morris.Donut({
-    element: 'morrisDonut1',
-    data: [
-      {label: 'Men', value: 12},
-      {label: 'Women', value: 30},
-      {label: 'Kids', value: 20}
-    ],
-    colors: ['#560bd0', '#007bff','#00cccc'],
-    resize: true
-  });
 
   new Morris.Donut({
-    element: 'morrisDonut2',
+    element: 'morrisDonut',
     data: [
       {label: 'Men', value: 12},
       {label: 'Women', value: 30},
